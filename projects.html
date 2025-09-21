@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects — Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container container-max">
+    <a class="navbar-brand" href="index.html">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="section-alt section">
+  <div class="container container-max">
+    <h2 class="mb-3">Projects</h2>
+    <p class="text-muted">A collection of projects I built during college and internships. Click any project for a quick description.</p>
+
+    <div class="project-grid mt-4">
+      <div class="project">
+        <img src="food.png" alt="">
+        <h5>Online Food Ordering System</h5>
+        <p class="text-muted small">Stack: React, Node, Express, MongoDB. Features: menus, cart, orders, admin dashboard, payment (mock).</p>
+        <p><strong>Role:</strong> Full-stack developer — implemented backend APIs, frontend UI & deployment.</p>
+        <a href="https://food-website-blue-five.vercel.app/" style="color: rgb(184, 211, 93);text-decoration: underline;">Go to the project</a>
+      </div>
+
+      <div class="project">
+        <img src="hospital.jpeg" alt="">
+        <h5>Hospital Management System</h5>
+        <p class="text-muted small">Stack: Java, MySQL, JSP/Servlets. Features: patient records, appointment scheduling, role-based login.</p>
+        <p><strong>Role:</strong> Team lead — designed ER diagram, created SQL schema and core modules.</p>
+      </div>
+
+      <div class="project">
+        <img src="color.jpg" alt="">
+        <h5>Color Detection system </h5>
+        <p class="text-muted small">python based color detection system. opencv, HSV color model.</p>
+        <p><strong>Role:</strong> Team lead - designed a system which gives you the color name & color code when you double tap on the image.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container container-max d-flex justify-content-between">
+    <div class="text-muted"><p class="text-muted small">Connect with me: <a href="https://www.github.com/Chandu7488" class="text-muted"><i class="fa-brands fa-github"></i></a> • <a href="https://www.linkedin.com/in/chandan-kumar-sharma-4a2809221" class="text-muted"><i class="fa-brands fa-linkedin"></i></a> •<a href="https://www.instagram.com/?deoia=1" class="text-muted"><i class="fa-brands fa-instagram"></i></a></p></div>
+    <div class="text-muted">Want code?<a style="text-decoration: underline; color: azure;" href="https://www.github.com/Chandu7488">links of GitHub.</a></div>
+    <div class="text-muted">© <span id="year-proj"></span> Chandan</div>
+  </div>
+</footer>
+<script>document.getElementById('year-proj').innerText = new Date().getFullYear();</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

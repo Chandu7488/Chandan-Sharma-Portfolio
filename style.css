@@ -1,0 +1,104 @@
+/* style.css - main styles for portfolio */
+:root{
+  --bg:#2f3a44;
+  --panel:#39424a;
+  --accent:#6e50ff;
+  --muted:#aab3bd;
+  --glass: rgba(195, 130, 130, 0.03);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+a{color:inherit;text-decoration:none}
+.container-max{max-width:1100px;margin:0 auto;padding:0 1rem}
+
+/* Navbar */
+.navbar{
+  background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.06));
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.nav-link{color:var(--muted) !important; margin-right:.5rem}
+.nav-link:hover{color:var(--accent) !important}
+.navbar-brand{font-weight:700;color:var(--accent)}
+
+/* Header / Hero */
+.header{
+  background: linear-gradient(180deg, rgba(68, 83, 102, 0.85), #354845);
+  color: #eaf0ff;
+  padding: 60px 0 40px;
+}
+.hero{
+  display:flex;
+  gap:2rem;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.hero-left{flex:1; min-width:260px}
+.hero-right{width:200px; text-align:center}
+.profile-img{
+  width:180px; height:180px; object-fit:cover;
+  border-radius:50%;
+  border:6px solid rgba(110,80,255,0.18);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+}
+
+/* Buttons */
+.btn-primary{
+  background:var(--accent);
+  border: none;
+  box-shadow: 0 6px 18px rgba(110,80,255,0.12);
+}
+.btn-outline{
+  border:1px solid rgba(255,255,255,0.12);
+  background:transparent;
+  color:#eaf0ff;
+}
+
+/* Cards and sections */
+.section{
+  padding:60px 0;
+  background:var(--bg);
+  color:#e7eefc;
+}
+.section-alt{
+  background: linear-gradient(180deg, #6c757d, #6c757d)
+}
+
+/* Skills grid */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.skill-card{
+  background:var(--panel);
+  padding:18px;border-radius:12px;
+  box-shadow: 0 6px 20px #212529;
+}
+.skill-title{font-weight:700;color:var(--accent);margin-bottom:8px}
+.skill-list{color:var(--muted); font-size:0.95rem}
+
+/* Projects */
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem}
+.project{
+  background:linear-gradient(180deg, #495057, #495057);
+  padding:12px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)
+}
+.project img{width:100%;height:150px;object-fit:cover;border-radius:8px}
+.project h5{margin:10px 0 6px}
+
+/* Footer */
+.footer{
+  padding:36px 0;color:var(--muted);
+  background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.35));
+}
+.footer .name{color:var(--accent);font-weight:700}
+
+/* Responsive tweaks */
+@media (max-width:768px){
+  .hero-right{width:140px;margin-top:12px}
+  .profile-img{width:140px;height:140px}
+  .header{padding:36px 0}
+}
+
+/* small utility */
+.text-muted{color:var(--muted)}
+hr.soft{border:0;height:1px;background:rgba(255,255,255,0.03);margin:18px 0}
